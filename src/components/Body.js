@@ -3,7 +3,7 @@ import { RES_DATA } from "../utils/mockData";
 import { useEffect, useState } from "react";
 
 const Body = () => {
-	const [listOfRestaurants, setListOfRestaurants] = useState(RES_DATA);
+	const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
 	useEffect(()=>{
 		fetchData();
@@ -15,6 +15,7 @@ const Body = () => {
 		console.log("json :- ", json);
 	}
 
+	if()
 	return (
 		<div className="body">
 			<div className="filter">
